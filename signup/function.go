@@ -22,7 +22,6 @@ func evchargingpoint_Signup(w http.ResponseWriter, r *http.Request) {
 			break
 		}
 	}
-	// w.Header().Set("Access-Control-Allow-Origin", "https://intern-monitoring.github.io")
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Methods", "POST")

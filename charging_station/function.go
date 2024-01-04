@@ -9,10 +9,10 @@ import (
 )
 
 func init() {
-	functions.HTTP("EvChargingPoint", evchargingpoint_Profile)
+	functions.HTTP("EvChargingPoint", evchargingpoint_chargingpoint)
 }
 
-func evchargingpoint_Profile(w http.ResponseWriter, r *http.Request) {
+func evchargingpoint_chargingpoint(w http.ResponseWriter, r *http.Request) {
 
 	allowedOrigins := []string{"https://ksi-billboard.github.io", "http://127.0.0.1:5500", "http://127.0.0.1:5501"}
 	origin := r.Header.Get("Origin")
